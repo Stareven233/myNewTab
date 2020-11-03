@@ -6,7 +6,7 @@
 // https://raw.githubusercontent.com/Stareven233/static/master/live2d/Bilibili2233/haruna/33/model.2018.bls-winter.json
 
 function rand_choice(arr) {
-return arr[Math.round(Math.random()*(arr.length-1))];
+    return arr[Math.round(Math.random()*(arr.length-1))];
 }
 
 let haruna_basedir = "https://raw.githubusercontent.com/Stareven233/static/master/live2d/Bilibili2233/haruna/"
@@ -16,7 +16,7 @@ let model_path = haruna_basedir;
 model_path += rand_choice(haruna) + '/' + rand_choice(closet_list);
 // console.log(model_path);
 
-　　L2Dwidget.init({
+L2Dwidget.init({
     "model": {
         "jsonPath": model_path,
         "scale": 1 
@@ -36,4 +36,4 @@ model_path += rand_choice(haruna) + '/' + rand_choice(closet_list);
         "opacityDefault": 1, 
         "opacityOnHover": 0.2 
     } 
-    });
+});

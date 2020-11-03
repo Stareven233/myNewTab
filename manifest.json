@@ -1,6 +1,6 @@
 {
     "name": "myNewTab",
-    "version": "1.1.0",
+    "version": "1.1.2",
     "description": "自定义chrome标签页",
     "icons": {
         "128": "img/zwei_128.png"
@@ -8,12 +8,12 @@
     "chrome_url_overrides": {
       "newtab": "newtab.html"
     },
-    "homepage_url": "https://github.com/Stareven233/MyNewTab",
+    "homepage_url": "https://github.com/Stareven233/myNewTab",
     "browser_action": {
         "default_icon": {        
             "128": "img/zwei_128.png"
         },
-        "default_title": "MyNewTab"
+        "default_title": "myNewTab"
     },
     "background": {
         "scripts": [
@@ -27,5 +27,5 @@
     "content_security_policy": "script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https://raw.githubusercontent.com; object-src 'self'",
     "minimum_chrome_version": "86",
     "manifest_version": 2,
-    "update_url": "https://github.com/Stareven233/MyNewTab"
+    "update_url": "https://github.com/Stareven233/myNewTab"
 }
