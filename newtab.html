@@ -3,12 +3,16 @@
 <head>
 	<title>new tab</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content"width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="/img/kuro.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/kuro.ico">
+    
 	<style>
         html {
             font-size: 100px;
         }
+        /* body {
+            background-image: url(chrome-search://theme/IDR_THEME_NTP_BACKGROUND@2x?bhmcheeokigdlgjepckedmelfolakjmh);
+        } */
         ::selection {
             color: #e65d5d;
         }
@@ -18,9 +22,20 @@
             margin: 2rem auto;
             text-align: center;
         }
-	</style>
+        #live2dcanvas {
+            pointer-events: auto !important;
+        }
+    </style>
+    
+    <script src="js/L2Dwidget.min.js"></script>
+    <script src="js/2233live2d.js"></script>
+    <script src="js/drag.js" defer></script>
+
 </head>
 <body>
     <div class="siro">羽ばたき方を忘れたって、飛んでる夢を見る</div>
 </body>
 </html>
+
+<!-- chrome-search://theme/IDR_THEME_NTP_BACKGROUND@2x?bhmcheeokigdlgjepckedmelfolakjmh -->
+<!-- 关于CSP不允许内联js执：https://stackoverflow.com/questions/25625412/chrome-extension-content-security-policy-executing-inline-code -->

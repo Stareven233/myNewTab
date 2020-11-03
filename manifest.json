@@ -1,6 +1,6 @@
 {
     "name": "myNewTab",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "自定义chrome标签页",
     "icons": {
         "128": "img/zwei_128.png"
@@ -24,8 +24,8 @@
     "permissions": [
         "tabs"
     ],
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'self'",
-    "minimum_chrome_version": "0",
+    "content_security_policy": "script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' https://raw.githubusercontent.com; object-src 'self'",
+    "minimum_chrome_version": "86",
     "manifest_version": 2,
     "update_url": "https://github.com/Stareven233/MyNewTab"
 }
